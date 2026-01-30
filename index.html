@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boqorada Nafyar 👸</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff3385;
+            --dark-pink: #cc0052;
+            --glass: rgba(255, 255, 255, 0.85);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #000;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            color: #2d3436;
+        }
+
+        .bg-gradient {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            z-index: -2;
+        }
+
+        #login-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 10000; backdrop-filter: blur(15px);
+        }
+
+        .login-card {
+            background: white; padding: 50px; border-radius: 40px;
+            box-shadow: 0 30px 60px rgba(255, 51, 133, 0.2);
+            text-align: center; border: 2px solid var(--pink);
+            animation: bounceIn 1s;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        input {
+            width: 100%; padding: 18px; border-radius: 50px; border: 2px solid #ddd;
+            margin: 20px 0; text-align: center; font-size: 1.2rem; outline: none;
+            transition: 0.3s;
+        }
+        input:focus { border-color: var(--pink); box-shadow: 0 0 10px rgba(255,51,133,0.3); }
+
+        .btn-modern {
+            background: linear-gradient(to right, var(--pink), var(--dark-pink));
+            color: white; border: none; padding: 15px 50px;
+            border-radius: 50px; font-weight: bold; cursor: pointer;
+            font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;
+            transition: 0.4s; box-shadow: 0 10px 20px rgba(255,51,133,0.3);
+            margin: 5px;
+        }
+        .btn-modern:hover { transform: translateY(-5px) scale(1.05); }
+
+        #main-wrapper { display: none; padding: 40px 15px; max-width: 900px; margin: auto; }
+
+        .section-card {
+            background: var(--glass);
+            border-radius: 35px; padding: 40px; margin-bottom: 40px;
+            border: 1px solid rgba(255,255,255,0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            transition: 0.5s;
+        }
+
+        h1 { font-family: 'Dancing Script', cursive; font-size: 4rem; color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 4px 10px rgba(0,0,0,0.2); }
+        h2 { font-family: 'Dancing Script', cursive; color: var(--pink); margin-bottom: 20px; font-size: 2.5rem; }
+
+        .amaan-list { line-height: 2.2; font-size: 1.1rem; color: #444; }
+        
+        .heart-particle {
+            position: fixed; pointer-events: none; z-index: -1;
+            animation: floatUp 4s linear forwards;
+        }
+        @keyframes floatUp {
+            from { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            to { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+
+        .funny-box { background: #fff5f8; padding: 25px; border-radius: 20px; border-left: 5px solid var(--pink); font-style: italic; }
+
+        #final-msg { 
+            margin-top: 20px; font-size: 1.3rem; padding: 15px; border-radius: 15px;
+            display: none; animation: bounceIn 0.5s; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <div id="login-overlay">
+        <div class="login-card">
+            <h1 style="color: var(--pink); font-size: 3rem;">Qalbi 💋</h1>
+            <p>Geli magacaaga si aad u gasho dunidayda...</p>
+            <input type="password" id="passCode" placeholder="Halkan ku qor...">
+            <button class="btn-modern" onclick="unlock()">Fur Dunida kuu gaar ka ah ❤️</button>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <h1>Shukri Maxamed (Nafyar) 👸💕</h1>
+
+        <div class="section-card">
+            <h2>✨ Amaanta Qalbiga 💋❤️‍🩹🫂</h2>
+            <div class="amaan-list">
+                1. Nafyaray, waxaad tahay iftiinka indhahayga iyo farxadda noloshayda. 🫶💕<br>
+                2. Quruxdaada waxaan u barbardhigayaa cadceed soo baxaysa. ☀️💋<br>
+                3. Shukri, dabcigaaga macaan ayaa iga dhigay mid kugu waalan. 🫂❤️<br>
+                4. Luul qaali ah oo badda hoosteeda taal ayaad iila mid tahay. 💎✨<br>
+                5. Adigaa mudan in lagu qoro buugaagta jaceylka ee dunida. 📖❤️‍🔥<br>
+                6. Markaan ku arko, qalbigu wuxuu u garaacmaa si xawaare leh. 💓🫂<br>
+                7. Waxaad tahay boqoradii aan muddo dheer raadinayay. 👑💋<br>
+                8. Codkaaga ayaa iigu filan daawo iyo deganaan nafeed. 🎶💕<br>
+                9. Xishoodkaaga iyo asluubtaada ayaa ah waxa aan kugu jeclaaday. 🌹🫶<br>
+                10. Shukri Maxamed, adigaa ah mustaqbalkayga iyo rajadayda. 🔐❤️
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>😂 Kaftan Yar 💋🫶</h2>
+            <div class="funny-box">
+                "Nafyaray, waxaan is idhi qalbigeeda iska dhex deganow, laakiin waxaan ka baqay inaan kugu dhex lumo ka dibna aan waayo qof i soo saara, waayo qalbigu aad buu u ballaaran yahay! Haddii jaceylkaagu xabsi lahaan lahaa, waxaan noqon lahaa maxbuuska kaliya ee diida in xabsiga laga sii daayo! 😂🫂💕"
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>💍 Qisadii Guurka 🫂❤️‍🩹</h2>
+            <p style="line-height: 2;">
+                Maalin baa wiil jaceyl hayo wuxuu ku yiri gabadh uu jeclaa: "Haddaan is guursanno, waxaan kuu ballan qaadayaa inaan kugu qaado garabkayga!" Gabadhii baa tiri: "Oo haddii aan cayilo oo aan noqdo 100KG maxaad sameyn doontaa?" Wiilkii baa yiri: "Waqtigaas baabuur dhaan ah ayaan kuu soo kireynayaa si uu kuu qaado, laakiin wali qalbigayga ayaad ku jiri doontaa!" 😂 Jaceylkeenu isna waa saas, xitaa haddii aad buurnaato Nafyaray, baabuur weyn ayaan kuu kireynayaa laakiin gacanta marnaba kaa deyn maayo! 💋🔐💎
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>💕 Erayo ka socda Qalbiga ❤️‍🩹💋</h2>
+            <p style="font-size: 1.2rem; text-align: center; line-height: 2;">
+                "Nafyaray, waxaad tahay riyadii aan ku taamayay ee rumowday. Noloshaydu midab ma lahaadaan adiga la'aataa. ❤️‍🩹"<br>
+                "Haddii quruxda dadka loo qaybin lahaa, adigaa kala bar qaadan lahaa, inta kalena dadka kale u dhaafi lahaa. 💋"<br>
+                "Indhahaaga waxaan ka dhex arkaa mustaqbalkayga, dhoolacaddeyntaaduna waa daawada kaliya ee bogsiisa qalbiygayga. 🫶"<br>
+                "Ma jiro qof adiga kugu bedeli kara, waayo waxaad tahay luul qaali ah oo aan cid kale heli karin. 💎"<br>
+                "Jaceylka aan kuu qabo maaha mid maalin ku dhamaanaya, waa mid socon doona inta neef igu jirto. 🫂💕"<br><br>
+                lkn hal arin jirto qoraalka waan buubi😂 lkn markaan call ka arko wixiiba wee iga lumi 😇  mexee tahay cilaad qalbi mise adaa faataxada soo aqrista😅
+            </p>
+        </div>
+
+        <div class="section-card" style="text-align: center; border: 2px solid var(--pink);">
+            <h2>Raaligelintii ma ku qanacday macaan? 🥺</h2>
+            <div style="margin-top: 20px;">
+                <button class="btn-modern" style="background: #28a745;" onclick="feedback('haa')">HAA ❤️</button>
+                <button class="btn-modern" style="background: #dc3545;" onclick="feedback('maya')">MAYA 💔</button>
+            </div>
+            <div id="final-msg"></div>
+        </div>
+
+        <footer style="text-align: center; color: white; padding: 40px; font-weight: bold;">
+            Gacaliso shukri maxamed[Nafyar] - I LOVE you ❤️💋
+        </footer>
+    </div>
+
+    <script>
+        function feedback(choice) {
+            const display = document.getElementById('final-msg');
+            display.style.display = "block";
+            if(choice === 'haa') {
+                display.style.color = "#155724";
+                display.style.background = "#d4edda";
+                display.innerHTML = "Mahadsanid macaan! Qalbigeyga ayaad qaboojisay. Waxaan kuu hayaa jaceyl iyo mahadcelin aan dhamaad lahayn! 🫂🫶🌹💋";
+                for(let i=0; i<30; i++) setTimeout(createHearts, i*100);
+            } else {
+                display.style.color = "#721c24";
+                display.style.background = "#f8d7da";
+                display.innerHTML = "Qalinka weyn iska dhig 😅... waxaan diyaar u ahay inaan ku raali geliyo ilaa aad ka qososhay! ❤️‍🩹";
+            }
+        }
+
+        function unlock() {
+            const pass = document.getElementById('passCode').value.toLowerCase();
+            if(pass === "nafyar") {
+                document.getElementById('login-overlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('login-overlay').style.display = 'none';
+                    document.getElementById('main-wrapper').style.display = 'block';
+                    createHearts();
+                }, 500);
+            } else {
+                alert("Password-ka waa khalad, gacaliso!");
+            }
+        }
+
+        function createHearts() {
+            const h = document.createElement('div');
+            h.classList.add('heart-particle');
+            h.innerHTML = ['❤️','💖','💋','🌹','🫶','💕'][Math.floor(Math.random()*6)];
+            h.style.left = Math.random() * 100 + 'vw';
+            h.style.fontSize = (Math.random()*20 + 20) + 'px';
+            document.body.appendChild(h);
+            setTimeout(() => h.remove(), 4000);
+        }
+        setInterval(createHearts, 600);
+    </script>
+</body>
+</html>
